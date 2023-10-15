@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有趣片段</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+	<div class="d"><a href="index.html">返回首页</a></div>
+    <div class="w">
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/08.jpg" alt="" style="width: 1200px;height: 400px;">
+                    </div>
+                    <div class="swiper-slide"><img src="./images/07.jpg" alt="" style="width: 1200px;height: 400px;">
+                    </div>
+                    <div class="swiper-slide"><img src="./images/03.jpg" alt="" style="width: 1200px;height: 400px;">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <div class="box clearfix">
+            <div class="left">
+                <img src="./images/04.jpg" alt="">
+            </div>
+            <div class="right">
+                <p>猫和老鼠治愈不开心，一事无成的小可爱。无意间在某站看见了标题为“不开心就进来看看”封面为猫和老鼠图片的直播间，当时莫名其妙不开心，就点进了，这个直播间24小时不间断的播放猫和老鼠，虽然小时候经常看，但是现在看起来治愈疗效更好，经典就是经典，每个动作每个表情都是那么爆笑和可爱。
+                </p>
+            </div>
+        </div>
+        <div class="box1">
+            <p>
+                汤姆就是个可爱憨憨的小笨蛋儿，其实他一点也不笨~只不过杰瑞也很聪明，欢喜冤家的日常tom让我觉得，即使我什么也干不成，我也可以很可爱。相比较而言，杰瑞就是一个小机灵鬼了，总是能够想到各种方法来对付汤姆。真的是非常有趣。
+            </p>
+            <img src="./images/15.jpg" alt="" style="width: 453px;height: 231px;">
+            <p>
+                猫和老鼠的故事陪伴了一代又一代的人，一代代的童年都少不了它。总是耀武扬威的猫和一只永远都不会被抓住的老鼠。一只抓不住老鼠的猫和一只各种挑衅猫的老鼠。
+            </p>
+        </div>
+        <center><video src="./media/v01.mp4" autoplay controls muted></video></center>
+        <div class="footer">
+            Tom and Jerry
+        </div>
+    </div>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+
+</body>
+
+</html>

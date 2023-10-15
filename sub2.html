@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色介绍</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+   		<div class="d"><a href="index.html">返回首页</a></div>
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/08.jpg" alt="" style="width: 1200px;height: 400px;">
+                    </div>
+                    <div class="swiper-slide"><img src="./images/07.jpg" alt="" style="width: 1200px;height: 400px;">
+                    </div>
+                    <div class="swiper-slide"><img src="./images/03.jpg" alt="" style="width: 1200px;height: 400px;">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="clearfix box2">
+            <div class="left">
+                <img src="./images/12.jpg" alt="" style="width: 260px;height: 346px;">
+            </div>
+            <div class="right">
+                <p>杰瑞（Jerry，1940年9月13日—），是米高梅电影公司制作的美国经典动画片《猫和老鼠》（又译《汤姆和杰瑞》Tom and
+                    Jerry）中的两大主角之一，70年代老动画中的著名卡通明星，是一只古灵精怪的棕毛花枝鼠，为猫咪汤姆亦敌亦友的好伙伴，表哥是马索尔（大表哥）、梅林（二表哥），侄子是小灰鼠泰菲。由于杰瑞古灵精怪的特征，经常能够成功戏弄猫咪汤姆（Tom）来演出很多搞笑镜头逗观众笑。经常搞得汤姆不知所措，糗事百出（不过有时自己也会受伤），看似一对很强硬的敌人，但事实上，他们这一对活宝在不知不觉时已经是好朋友了，谁也离不开谁。
+                </p>
+            </div>
+        </div>
+        <div class="box3 clearfix">
+            <div class="left">
+                <p>汤姆（Tom，1940年9月13日-）是米高梅电影公司制作的动画片《猫和老鼠》及其衍生作品中的主角之一，70年代老动画中的卡通角色。他与小老鼠杰瑞（Jerry）之间可称得上是一对欢喜冤家，二者亦敌亦友，有时互相捣乱，有时互相帮助，有时争论不休，有时团结和谐。他每天忙碌于捉住同住在一起的杰瑞，但总是不如意，总在被耍，憨傻得可爱。生活中充满幽默搞笑，同时也具有抒情与伤情的一幕；主人通常都为两只鞋太太。另外，他也爱慕漂亮的千金母猫图多盖洛（新版为图茨）。有时还被其他成员欺负，如斯派克（Spike）、布奇、莱特宁、托普斯等。是个喜剧而又活在悲剧的角色。
+                </p>
+            </div>
+            <div class="right">
+                <img src="./images/13.jpg" alt="" style="width: 260px;height: 346px;">
+            </div>
+        </div>
+        <div class="clearfix box2">
+            <div class="left">
+                <img src="./images/14.jpg" alt="" style="width: 260px;height: 346px;">
+            </div>
+            <div class="right">
+                <p>《猫和老鼠》的故事情节围绕着一对常见的家猫汤姆和老鼠杰瑞而展开，汤姆有一种强烈的欲望，总是不断努力的去捉同居一室的老鼠杰瑞，并不断地努力驱赶着这位讨厌的房客。尽管总是失败，但汤姆在追逐中得到的乐趣远远超过了捉住杰瑞。同时，汤姆在片中经常使用斧头、锤子、炸药、鞭炮等暴力工具或陷阱来对付杰瑞。但杰瑞非常机灵，时而使汤姆的诡计适得其反，让汤姆自食其果。在这部动画中，没有动物世界中恃强凌弱的残酷，只有两个邻居之间的日常琐事和纷争。
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            Tom and Jerry
+        </div>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+
+</body>
+
+</html>

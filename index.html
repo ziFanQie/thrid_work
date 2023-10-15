@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫和老鼠</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #scrolling-marquee {
+            width: 300px;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            margin-left: 683px;
+        }
+
+        #scrolling-marquee p {
+            position: absolute;
+            white-space: nowrap;
+            margin: 0;
+            animation: marquee 10s linear infinite;
+            color: rgb(201, 132, 143);
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="w">
+        <div class="nav">
+            <div class="right">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./sub1.html">有趣片段</a></li>
+                    <li><a href="./sub2.html">角色介绍</a></li>
+                    <li><a href="./sub3.html">与我联系</a></li>
+                    <li><a href="./sub4.html">登录注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./images/01.jpg" alt="">
+        </div>
+        <div class="container">
+            <h2>剧情简介</h2>
+            <div class="clearfix">
+                <div class="left">
+                    <img src="./images/02.jpg" alt="">
+                </div>
+                <div class="right">
+                    <p>
+                        《猫和老鼠》的故事情节围绕着一对常见的家猫汤姆和老鼠杰瑞而展开，汤姆有一种强烈的欲望，总是不断努力的去捉同居一室的老鼠杰利，并不断地努力驱赶着这位讨厌的房客。
+
+                        尽管总是失败，但汤姆在追逐中得到的乐趣远远超过了捉住杰瑞。同时，汤姆在片中经常使用斧头、锤子、炸药、鞭炮等暴力工具或陷阱来对付杰瑞。但杰瑞非常机灵，时而使汤姆的诡计适得其反，让汤姆自食其果。
+
+                    </p>
+                </div>
+
+            </div>
+            <h2>相关图片</h2>
+            <ul>
+                <li><img src="./images/05.jpg" alt=""></li>
+                <li><img src="./images/06.jpg" alt=""></li>
+            </ul>
+            <ul>
+                <li><img src="./images/09.jpg" alt=""></li>
+                <li><img src="./images/10.jpg" alt=""></li>
+            </ul>
+
+        </div>
+        <h1 id="time" style="color: rgb(7, 130, 127); text-align: center;margin-top: 20px;"></h1>
+
+        <div class="footer">
+            Tom and Jerry
+        </div>
+    </div>
+    <script>
+        function updateTime() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            // 在一位数前面添加零以保持时间格式一致
+            hours = (hours < 10 ? "0" : "") + hours;
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+            seconds = (seconds < 10 ? "0" : "") + seconds;
+
+            var formattedTime = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("time").innerHTML = formattedTime;
+        }
+
+        // 初始加载时间
+        updateTime();
+
+        // 每秒钟更新一次时间
+        setInterval(updateTime, 1000);
+    </script>
+
+</body>
+
+</html>

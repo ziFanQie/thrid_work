@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>与我联系</title>
+    <style>
+
+        a {
+            text-decoration: none;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: rgb(7, 130, 127);
+            font-size: 18px;
+            color: #fff;
+            margin-top: 30px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            height: 396px;
+			width: 100%;
+            height: 100%;
+        }
+
+        .tab-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(101, 207, 203);
+            border-radius: 5px;
+            width: 1000px;
+            height: 396px;
+        }
+
+        .tab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(101, 207, 203);
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .tab-header button {
+            color: #fff;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .tab-header button:focus {
+            outline: none;
+        }
+
+        .tab-header button.active {
+            background-color: #666;
+        }
+
+        .tab-content {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: rgb(101, 207, 203);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .tab-header button.active {
+            background-color: rgb(7, 130, 127);
+        }
+		.d{
+			display: block;
+			font-size: 20px;
+			color: #ffffff;
+			text-align: center;
+			}
+    </style>
+
+</head>
+
+<body>
+        <div class="d"><a href="index.html">返回首页</a></div>
+        <h1 style="text-align: center;color: #fff;background-color:rgb(101, 207, 203);margin-top: 20px;padding: 20px;">
+            登录与注册</h1>
+
+        <div class="container">
+            <div class="tab-container">
+                <div class="tab-header">
+                    <button id="login-tab" class="active">Login</button>
+                    <button id="register-tab">Register</button>
+                </div>
+                <div class="tab-content">
+                    <div id="login-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="login-email">邮箱:</label>
+                                <input type="email" id="login-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">账号:</label>
+                                <input type="text" id="login-password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">密码:</label>
+                                <input type="password" id="login-password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="register-form" style="display: none;">
+                        <form>
+                            <div class="form-group">
+                                <label for="register-username">用户名:</label>
+                                <input type="text" id="register-username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-email">邮箱:</label>
+                                <input type="email" id="register-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">密码:</label>
+                                <input type="password" id="register-password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-phone">电话:</label>
+                                <input type="tel" id="register-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Register">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Tom and Jerry
+        </div>
+
+</body>
+
+</html>
